@@ -37,6 +37,25 @@ gulp watch --file posts/example.md
 
 There are VS Code tasks on the `.vscode` directory. The build task will compile and watch the current file.
 
+## Update your syntax highlight preferences
+
+When writing code snippets like this:
+
+~~~
+```csharp
+WriteLine("Hello world");
+```
+~~~
+
+The output will be like this:
+
+```html
+<pre class="brush: csharp">WriteLine("Hello world");</pre>
+```
+
+You can change this by changing the `highlight` function on `gulpfile.mjs`.
+
+
 ## Contributing
 
 Questions, comments, bug reports, and pull requests are all welcome.  Submit them at
