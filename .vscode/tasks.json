@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile current file",
+      "type": "shell",
+      "command": "npm run build -- --file '${file}'",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Compile/watch current file",
+      "type": "shell",
+      "command": "npm run watch -- --file '${file}'",
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Compile/watch all Markdown files",
+      "type": "shell",
+      "command": "npm run watch",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
